@@ -81,7 +81,7 @@ int initJoysticks (Joystick *joy[],int joy_vec_size){
 			joy[i] = new Joystick(i);
 		}
 		catch (std::bad_alloc& ba){
-			std::cerr << "<ERROR< bad_alloc on [initJoysticks]" << ba.what() << std::endl;
+			std::cerr << "<ERROR> bad_alloc on [initJoysticks]" << ba.what() << std::endl;
 			return 0;
 		}
 		
