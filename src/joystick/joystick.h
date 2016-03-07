@@ -64,12 +64,7 @@ public:
     };
 
 	/**
-	 *  @details Enumeração dos 10 botões do arcade, eles seguem o seguinte layout:
-	 *  
-	 *                     (8) (9)
-	 *    ^
-	 *  < o >      (0) (1) (2) (3)
-	 *    v        (4) (5) (6) (7)
+	 *  @details Enumeração dos 10 botões do arcade
 	*/
     enum Buttons{
         BUTTON_1      /**< 0 */
@@ -104,7 +99,7 @@ public:
      *  }
      *  @endcode
     */
-    bool getButton (Buttons num);
+    bool getButton (unsigned int num);
 	
     /**
      *  @brief Eixo X do joystick da esquerda
@@ -151,7 +146,7 @@ public:
      *  
      *  @endcode
     */
-    Axis getAxisPosition();
+    int getAxisPosition();
 
     /**
      *  @brief Retorna o número de joysticks plugados
